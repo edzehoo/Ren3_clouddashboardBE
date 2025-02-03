@@ -2,7 +2,7 @@
 
 ## Setting Up the project
 
-Clone this git repo from (git@github.com:edzehoo/Ren3_clouddashboardBE.git)
+Clone this git repo from (https://github.com/edzehoo/Ren3_clouddashboardBE.git)
 
 
 ## To run the app locally (for development purpose)
@@ -13,7 +13,7 @@ Install all the required dependencies for the project
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
+Builds the app for production to the `dist` folder.\
 
 ### `npm start`
 
@@ -65,7 +65,7 @@ Stops and removes all containers, networks, and volumes defined in the docker-co
 
 ## Recomanded approcach
 
-1. Close the git hub repo
+1. Clone the github repo (https://github.com/edzehoo/Ren3_clouddashboardBE.git)
 2. Run `docker-compose up --build -d` in the terminal
     - This will install dependencies run the DB and execute any migrations that it finds and make the service up and running.
 3. Run `docker-compose down` once development is done or in case of any changes and run the Up command again.
