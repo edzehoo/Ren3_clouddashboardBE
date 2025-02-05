@@ -7,22 +7,22 @@ module.exports = {
     // Add new columns to existing table
     await queryInterface.addColumn('customers', 'contactPerson1', {
       type: DataTypes.STRING,
-      allowNull: true,
+      allowNull: false,
     });
 
     await queryInterface.addColumn('customers', 'contactPerson2', {
       type: DataTypes.STRING,
-      allowNull: true,
+      allowNull: false,
     });
 
     await queryInterface.addColumn('customers', 'createdBy', {
       type: DataTypes.STRING,
-      allowNull: true,
+      allowNull: false,
     });
 
     await queryInterface.addColumn('customers', 'updatedBy', {
       type: DataTypes.STRING,
-      allowNull: true,
+      allowNull: false,
     });
   },
 
