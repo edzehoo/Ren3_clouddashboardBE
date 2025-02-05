@@ -18,7 +18,7 @@ services:
     depends_on:
       - postgres
     command: >
-      bash -c "SEQUELIZE_RC=.sequelizerc npx sequelize-cli db:migrate --config ./src/config/config.js && npm start"
+      bash -c "npm install && SEQUELIZE_RC=.sequelizerc npx sequelize-cli db:migrate --config ./src/config/config.js && npm start"
 
   postgres:
     image: postgres:13
