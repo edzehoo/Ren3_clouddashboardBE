@@ -26,4 +26,16 @@ export class Customer extends Model {
 
   @Column
   public officeAddress!: string;
+
+  @Column
+  public contactPerson1!: string; 
+
+  @Column
+  public contactPerson2!: string; 
+
+  @Column
+  public createdBy!: string; 
+
+  @Column
+  public updatedBy!: string; 
 }
