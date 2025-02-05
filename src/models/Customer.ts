@@ -1,6 +1,8 @@
 import { Table, Column, Model, PrimaryKey, IsUUID } from 'sequelize-typescript';
 
-@Table
+@Table({
+  tableName: 'customers',
+})
 export class Customer extends Model {
   @PrimaryKey
   @IsUUID(4)
